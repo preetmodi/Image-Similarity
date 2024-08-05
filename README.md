@@ -14,5 +14,10 @@ The code uses a VGG16 model to extract features from the last dense layer "fc2".
 Cosine Similarity is used to calculate similarity between the features of the new image and the features of images in the dataset. 
 To reduce computation, <b>Approximate Nearest Neighbours</b> can also be implemented instead of comparing with the entire dataset. However at this size of the data set, latency was not observed. 
 
+Alternative models such as EfficientNet2M or EfficientNetB1 could be used to improve performance, however, the cost of obtaining features was observed to be approximately 15x the cost for VGG16. 
+
+The Dataset with all the feature vector is split into 4 pickle files to reduce RAM utlization. 
+
+If you have any other questions, please feel free to contact me at preet.modi00@gmail.com
 
 
