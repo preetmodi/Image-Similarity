@@ -1,0 +1,17 @@
+Valentino is one our customers. In this project, you are asked to create a web service containing an ML model that given an image as the input, will return a list of most similar images.
+
+
+
+Here are the specifications:
+
+The web service has a POST endpoint that receives an image from the list below and returns up to 10 products that are most similar to the input image
+The web service is written in Python
+You're free to choose any Python framework to build the service
+The web service is running inside a Docker image
+The Docker image is as small and as efficient as possible
+All images, including the input, are chosen from the image list below
+
+
+You can download the list of images from this link: https://xgen-interview-dataset.s3.amazonaws.com/valentino_links.csv
+
+In order to download the images on your local system, you need to write a script.
