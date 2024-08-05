@@ -30,7 +30,9 @@ The response returns a JSON object with two keys:
 2) indices: The indices of up to the top 10 similar products from the `app/Images` folder, filtered by a minimum similarity score of 0.6 to avoid irrelevant matches.
 Future Enhancements
 
-To further enhance performance, alternative models such as EfficientNetV2M or EfficientNetB1 could be considered. However, these models have been observed to have a feature extraction cost of approximately 15 times higher than VGG16.
+To further enhance performance, alternative models such as EfficientNetV2M or EfficientNetB1 could be considered. However, these models have been observed to have a feature extraction cost of approximately 15 times higher than VGG16. 
+
+A Siamese Network can also be used to improve efficiency as they usually provide similar results with smaller models. However, in this case, due to a lack of training data (labeled Data) we are not able to train a model. The only readily available pre-trained model that I could find was on the Fashion MNIST dataset, which owing to the small input size of the data (24,24) would not have high-quality features. With more time, I might be able to utilize the small 4-5 word description present in the file name with some text processing as labels for the data and train a new Siamese network.   
 
 The Dataset with all the feature vectors is split into 4 pickle files to reduce RAM utilization. 
 
