@@ -3,8 +3,7 @@
 ## Steps to RUN
 From the root folder, build the docker file
 
-```bash
-docker build -t image-similarity-service .```
+```docker build -t image-similarity-service .```
 
 To run the docker image, use the following command
 ```docker run -p 8000:8000 image-similarity-service```
@@ -19,8 +18,7 @@ To optimize computation, **Approximate Nearest Neighbours** (ANN) could be imple
 
 You can test the service using the following command:
 
-```bash
-curl -X POST "http://localhost:8000/similar-products" -F "file=@E:\work\Image-Similarity\app\Images\8.png"```
+```curl -X POST "http://localhost:8000/similar-products" -F "file=@E:\work\Image-Similarity\app\Images\8.png"```
 
 
 
