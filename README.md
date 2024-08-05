@@ -6,6 +6,7 @@ From the root folder, build the docker file
 ```docker build -t image-similarity-service .```
 
 To run the docker image, use the following command
+
 ```docker run -p 8000:8000 image-similarity-service```
 
 ## Description
