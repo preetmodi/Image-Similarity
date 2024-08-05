@@ -2,10 +2,10 @@
 
 ## Steps to RUN
 From the root folder, build the docker file 
-`docker build -t image-similarity-service .`
+```docker build -t image-similarity-service .```
 
 To run the docker image, use the following command
-`docker run -p 8000:8000 image-similarity-service`
+```docker run -p 8000:8000 image-similarity-service```
 
 ## Description:
 
@@ -15,7 +15,7 @@ Cosine Similarity is used to calculate similarity between the features of the ne
 To reduce computation, <b>Approximate Nearest Neighbours</b> can also be implemented instead of comparing with the entire dataset. However at this size of the data set, latency was not observed. 
 
 Testing was done using the following command 
-`curl -X POST "http://localhost:8000/similar-products" -F "file=@E:\work\Image-Similarity\app\Images\8.png"`
+```curl -X POST "http://localhost:8000/similar-products" -F "file=@E:\work\Image-Similarity\app\Images\8.png"```
 
 Currently it returns json object with 2 keys. 1) list of images in np array format, and 3) the indices of up to top 10 similar products (min similarity score of 0.6 to avoid unwanted matches)
 
